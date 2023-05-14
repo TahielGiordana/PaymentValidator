@@ -29,7 +29,7 @@ public class PaymentFinder {
             }
 
         } catch (IOException | ParseException e) {
-
+            System.out.println("error al obtener pagos: " + e.getMessage());
         }
         return paid;
     }
